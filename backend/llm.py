@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Groq(api_key="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")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 
 def call_llm_json(prompt: str):
